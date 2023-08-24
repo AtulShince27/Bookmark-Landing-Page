@@ -1,0 +1,41 @@
+@media screen and (min-width:375px) {
+    
+}
+@media screen and (min-width:1440px) {
+    .accordion{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .accordion-box{
+        padding: 10px 0px;
+    }
+    .accordion-content{
+        text-align: left;
+        color: hsl(229, 7%, 50%);
+        letter-spacing: 2.25px;
+    }
+    #bottomNavBarFacebook{
+        margin-right: 2.5rem;
+    }
+}
+.navbar-main-body{
+    padding: 2rem 7.5rem;
+}
+.nav-links{
+    margin-left: 50%;
+}
+.navButton{
+    padding: 0.1rem 1.2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 0.85rem;
+}
+.navButton:hover{
+    color: red;
+}
+#navLoginBtn{
+    border: 1.6px solid red;
+    box-shadow: 2.6px 4px 4px hsl(230, 28%, 83%);
+    border-radius: 10px;
+}

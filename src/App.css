@@ -1,38 +1,215 @@
-.App {
-  text-align: center;
+@media screen and (min-width: 375px) {
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (min-width:1440px) {
+  .landing-page{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .landing-page-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10rem 7.5rem;
+  }
+  #landingPageDesignElement{
+    width: 30%;
+    height: 35vh;
+    background-color: hsl(231, 69%, 60%);
+    margin-left: 70%;
+    position: absolute;
+    margin-top: 20rem;
+    border-radius: 40% 0% 0% 40%;
+    z-index: -1;
+  }
+  .landing-page-grid p{
+    width: 65%;
+    margin-bottom: 2rem;
+  }
+  .landing-page-grid h1{
+    margin-bottom: 2rem;
+  }
+  .page2{
+    height: 100vh;
+    width: 100%;
+  }
+  .page2 h3{
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .page2 #page2Description{
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    margin-bottom: 3.5rem;
+    color: hsl(229, 8%, 60%);
+  }
+  .page2-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 7.5rem 7.5rem;
+  }
+  .page2-grid #page2GridDescription{
+    text-align: left;
+    width: 60%;
+    color: hsl(229, 8%, 60%);
+  }
+  #page2GridContent>button{
+    margin-top: 2rem;
+  }
+  .page3{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+  }
+  .page3 #page3IntroDescription{
+    width: 40%;
+    margin-left: 30%;
+    color: hsl(229, 8%, 60%);
+    margin-top: 1.5rem;
+  }
+  .page3-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 60%;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5rem;
+  }
+  .page3-grid>div{
+    box-shadow: 3px 3px 5px 2px hsl(228, 17%, 77%);
+    width: 90%;
+    height: 70%;
+  }
+  .page3-grid>div:nth-child(2){
+    margin-top: 5rem;
+  }
+  .page3-grid>div:nth-child(3){
+    margin-top: 10rem;
+  }
+  .page3-grid>div>img{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .page3-grid>div>p{
+    color: hsl(229, 8%, 60%);
+    letter-spacing: 1.3px;
+    margin-bottom: 2rem;
+  }
+  .page3-grid>div>hr{
+    border: 1px dashed;
+    margin-bottom: 2rem;
+  }
+  .page3-grid>div>button{
+    background-color: hsl(231, 69%, 60%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+  }
+  .page3-grid>div>button:hover{
+    border: 1px solid hsl(231, 69%, 60%);
+    background-color: white;
+    color: hsl(231, 69%, 60%);
+  }
+  .faq-page{
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+  }
+  .faq-page>p{
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 2rem;
+    color: hsl(229, 8%, 60%);
+    margin-bottom: 3.5rem;
+  }
+  #moreInfoBtn{
+    text-align: center;
+    margin-top: 5rem;
+    padding: 8px 16px;
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+  }
+  .tab-bar{
+    width: 60%;
+    margin-left: 20%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border-bottom: 2px solid hsl(228, 17%, 77%);
+  }
+  .tab-bar-links{
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+  .tab-bar-links:hover{
+    border-bottom: 3px solid hsl(0, 94%, 66%);
+  }
+  .footer-page{
+    background-color: hsl(231, 69%, 60%);
+    width: 100%;
+    height: 45vh;
+    padding-top: 2.5rem;
+    text-align: center;
+    color: white;
+  }
+  .footer-page>h5{
+    margin-bottom: 2.5rem;
+  }
+  .footer-page>h1{
+    width: 40%;
+    margin-left: 30%;
+  }
+  .footer-page>div{
+    margin-top: 3rem;
+    margin-left: 33%;
+    width: 40%;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .footer-page>div>input{
+    padding: 8px 10px;
+    border-radius: 5px;
+  }
+  .footer-page>div>button{
+    padding: 10px 22.5px;
+    background-color: hsl(0, 94%, 66%);
+    width: 60%;
+    margin-left: 7.5%;
+    border-radius: 5px;
+  }
+  .footer-page>div>button:hover{
+    background-color: white;
+    border: 2px solid hsl(0, 94%, 66%);
+    color: hsl(0, 94%, 66%);
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body{
+  font-family: 'Rubik', sans-serif;
+}
+.landing-page-grid p{
+  color: hsl(229, 8%, 60%);
+}
+.landing-page-grid button{
+  padding: 8px 12px;
+  margin-right: 10px;
+  border-radius: 6px;
+}
+.landing-page-grid button:first-of-type{
+  background-color: hsl(231, 69%, 60%);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.landing-page-grid button:last-of-type{
+  background-color: hsl(230, 16%, 72%);
+  color: hsl(229, 31%, 21%);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.landing-page-grid button:first-of-type:hover{
+  border: 1px solid hsl(231, 69%, 60%);
+  background-color: white;
+  color: hsl(231, 69%, 60%);
+}
+.landing-page-grid button:last-of-type:hover{
+  border: 1px solid hsl(229, 31%, 21%);
+  background-color: white;
 }

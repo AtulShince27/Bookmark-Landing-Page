@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Bookmark-Landing-Page/static/css/main.b5dbaff4.css",
+    "main.css": "/Bookmark-Landing-Page/static/css/main.0e849aeb.css",
     "main.js": "/Bookmark-Landing-Page/static/js/main.0662093c.js",
     "static/js/787.bf6fbf4b.chunk.js": "/Bookmark-Landing-Page/static/js/787.bf6fbf4b.chunk.js",
     "static/media/illustration-features-tab-3.svg": "/Bookmark-Landing-Page/static/media/illustration-features-tab-3.a4206aab7946773b29b702492d2d014b.svg",
@@ -12,12 +12,12 @@
     "index.html": "/Bookmark-Landing-Page/index.html",
     "static/media/logo-firefox.svg": "/Bookmark-Landing-Page/static/media/logo-firefox.a9e6ca53e8cfd641e556b7afb1f0085f.svg",
     "static/media/logo-opera.svg": "/Bookmark-Landing-Page/static/media/logo-opera.ff14e4763945338fe002017c72e7e597.svg",
-    "main.b5dbaff4.css.map": "/Bookmark-Landing-Page/static/css/main.b5dbaff4.css.map",
+    "main.0e849aeb.css.map": "/Bookmark-Landing-Page/static/css/main.0e849aeb.css.map",
     "main.0662093c.js.map": "/Bookmark-Landing-Page/static/js/main.0662093c.js.map",
     "787.bf6fbf4b.chunk.js.map": "/Bookmark-Landing-Page/static/js/787.bf6fbf4b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5dbaff4.css",
+    "static/css/main.0e849aeb.css",
     "static/js/main.0662093c.js"
   ]
 }

@@ -1,16 +1,13 @@
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import CollapsibleExample from './components/nav-bar';
+import OffcanvasExample from './components/nav-bar';
 import BasicAccordion from './components/accordion';
-import LandingPageImage from './images/illustration-hero.svg';
 import Page2Image1 from './images/illustration-features-tab-1.svg';
 import Page2Image2 from './images/illustration-features-tab-2.svg';
 import Page2Image3 from './images/illustration-features-tab-3.svg';
 import Page3Image1 from './images/logo-chrome.svg';
 import Page3Image2 from './images/logo-firefox.svg';
 import Page3Image3 from './images/logo-opera.svg';
-import FooterImage1 from './images/icon-error.svg'
-import BottomNavBar from './components/bottom-nav-bar';
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -82,9 +79,11 @@ function App() {
   return (
     <div className="App">
       <div className="landing-page">
-        {/* Do not add classes for navbar react-bootstrap it may lead to the navbar not filling the screen width */}
-        <CollapsibleExample className='landing-page-navbar'></CollapsibleExample>
+        <div className='navBar'>
+          <OffcanvasExample></OffcanvasExample>
+        </div>
         <div id='landingPageDesignElement'></div>
+        <div id="mobileHeroImg"></div>
         <div className="landing-page-grid">
           <div id='text-content'>
             <h1>A Simple Bookmark Manager</h1>
@@ -92,15 +91,17 @@ function App() {
               A clean and simple interface to organize your favourite websites. 
               Open a new browser tab and see your sites load instantly. Try it for free.
             </p>
-            <button>
-              Get it on Chrome
-            </button>
-            <button>
-              Get it on Firefox
-            </button>
+            <div className='button-col'>
+              <button>
+                Get it on Chrome
+              </button>
+              <button>
+                Get it on Firefox
+              </button>
+            </div>
           </div>
           <div id='image-content'>
-            <img src={LandingPageImage} alt="landing page image" />
+            {/* <img src={LandingPageImage} alt="landing page image" /> */}
           </div>
         </div>
       </div>
@@ -139,7 +140,7 @@ function App() {
           We’ve got more browsers in the pipeline. Please do let us know if you’ve 
           got a favourite you’d like us to prioritize.
         </p>
-        <div className='w-4/5 pl-12 pr-12 ml-40 page3-grid'>
+        <div className='w-4/5 page3-grid'>
           <div>
             <img src={Page3Image1} alt='Chrome'/>
             <h3>Add to Chrome</h3>
@@ -183,8 +184,8 @@ function App() {
         </div>
         {/* <img src={FooterImage1} alt="Error" /> */}
       </div>
-      <div className="bottom-nav">
-        <BottomNavBar></BottomNavBar>
+      <div className='empty'>
+          
       </div>
     </div>
   );
